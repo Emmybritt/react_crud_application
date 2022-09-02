@@ -5,16 +5,6 @@ const Posts = ({ posts, setPosts, handleShowModal }) => {
   console.log();
   let fetchedPosts = [];
 
-  // function IteratePost() {
-  //   if (posts) {
-  //     for(let i = 0; i < 10; i++){
-  //     fetchedPosts.push(posts[i])
-  //     }
-  //     return fetchedPosts;
-  //   }
-  // }
-
-  // console.log('This is the fetched poost', IteratePost());
 
   function handleDeletePost(id) {
     if (window.confirm("Are You Sure want to continue this process")) {
@@ -22,6 +12,8 @@ const Posts = ({ posts, setPosts, handleShowModal }) => {
       setPosts(iteratedPost);
     }
   }
+
+  
 
   return (
     <div>
